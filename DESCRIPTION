@@ -1,8 +1,8 @@
 Package: spBFA
 Type: Package
 Title: Spatial Bayesian Factor Analysis
-Version: 1.1
-Date: 2021-04-22
+Version: 1.2
+Date: 2022-09-04
 Authors@R: person("Samuel I.", "Berchuck", email = "sib2@duke.edu", role = c("aut", "cre"))
 Description: Implements a spatial Bayesian non-parametric factor analysis model 
     with inference in a Bayesian setting using Markov chain Monte Carlo (MCMC). 
@@ -22,7 +22,7 @@ License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
 LazyDataCompression: xz
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.1
 NeedsCompilation: yes
 Depends: R (>= 3.0.2)
 Imports: graphics, grDevices, msm (>= 1.0.0), mvtnorm (>= 1.0-0),
@@ -31,8 +31,8 @@ Suggests: coda, classInt, knitr, rmarkdown, womblR (>= 1.0.3)
 LinkingTo: Rcpp, RcppArmadillo (>= 0.7.500.0.0)
 VignetteBuilder: knitr
 Language: en-US
-Packaged: 2021-04-26 13:17:48 UTC; sam
+Packaged: 2022-09-04 17:22:39 UTC; sib2
 Author: Samuel I. Berchuck [aut, cre]
 Maintainer: Samuel I. Berchuck <sib2@duke.edu>
 Repository: CRAN
-Date/Publication: 2021-04-27 07:30:02 UTC
+Date/Publication: 2022-09-04 17:40:02 UTC

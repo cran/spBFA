@@ -1,7 +1,7 @@
-d77b841eb53176a5420d8f52925c373f *DESCRIPTION
+6c016418a3a658c1f2dc75f0074587a3 *DESCRIPTION
 d35062b05e2783cf450c9cb8b55661e7 *NAMESPACE
 df191a1a8abdea870a5766f35ebabeff *R/DIAG_diagnostics.R
-b012c2a11e78906e4f4862202e513009 *R/MCMC_CheckInputs.R
+5edddf1803d1799a7e3c3a6c9854757c *R/MCMC_CheckInputs.R
 2f593081b39fa5e0b706de3705d7bdff *R/MCMC_Create.R
 28340bbf2cb0738b0281cc457e6bf538 *R/MCMC_Utilities.R
 7d001f49f722403bc065d1578ecfbd21 *R/MCMC_bfa_sp.R
@@ -9,11 +9,11 @@ e6bee87bf3d10a7b35b7400182f06834 *R/PRED_predict.R
 06beb3002dbe72a5127720f13e398646 *R/RcppExports.R
 9dc22a4c3b71ea6e7e1b43706d02973a *R/reg.bfa_sp-data.R
 a61e2e8300a26ad4c8ef3550f1217604 *R/spBFA-package.R
-c423400e87f5158668dae6301c5079db *build/vignette.rds
+af0dd7bc1ff5e62bddf9c602244f6a05 *build/vignette.rds
 998cdd4eb25153e05e48cb7972f4a3d9 *data/reg.bfa_sp.rda
 a33d5417bbfca6c7d09e75819ffa553e *inst/doc/spBFA-example.R
 c970aae91fd7730cfc874790e30cb3c7 *inst/doc/spBFA-example.Rmd
-171cc87e5c745056a06268f52a6f417e *inst/doc/spBFA-example.html
+bbec48f486b5a8334762189992940bc8 *inst/doc/spBFA-example.html
 ea7cb5772e51bd8d02da100df2455edc *man/bfa_sp.Rd
 799e203fd92df9de008a9fd64b3b73f1 *man/diagnostics.Rd
 efc7afe7ab4a6399e0ad35356cb16019 *man/is.spBFA.Rd
@@ -22,8 +22,8 @@ b2c5bb5808df5b4b128e88d6cb9128e5 *man/reg.bfa_sp.Rd
 dd2d0fa4899866bcc60b43fc84407c6b *man/spBFA.Rd
 f7239ce9595ff458845630eb420f97c9 *src/CovarianceFunctions.cpp
 c9504b4d39fca4f8ded84baaee0b217d *src/DIAG_Conversion.cpp
-637fa57f7173a565b16f703418493a00 *src/DIAG_GetLogLik.cpp
-d1e443b31bb28096bf3121c3dd11c17c *src/DIAG_SamplePPD.cpp
+4da55fb9a01f50d277ae64a73af0fc15 *src/DIAG_GetLogLik.cpp
+1879a3f423e42b3e27e3be09b44ea8b3 *src/DIAG_SamplePPD.cpp
 ab838c0ff439c2297879d81a54e6c77e *src/DIAG_diagnostics.h
 40d9577472b9d1cef967025e4dbd8145 *src/DistributionFunctions.cpp
 ec48e8a9d821716577a8cec0582d6750 *src/MCMC_Conversion.cpp
@@ -34,8 +34,8 @@ bb9782c5b978205a45f5d972e64486b1 *src/MCMC_bfa_sp.h
 a2bcd9ccd334e4cbe19c0f48acc6ac67 *src/Makevars
 606d64fa561f1000382ce9d3113456ea *src/Makevars.win
 8d6b68d50555106dac7861866531ed68 *src/PRED_Conversion.cpp
-72fddcd0054ea1d13031921b6c3b8f13 *src/PRED_EtaKrigging.cpp
-9bec84673f890907fa81fe82ca6ff8a2 *src/PRED_YKrigging.cpp
+9f1584d77b8349fffa1927dcab29d69a *src/PRED_EtaKrigging.cpp
+87a12b7171c58d935aae94a38c1394e3 *src/PRED_YKrigging.cpp
 345ac69d462d0a2d160d51a0df8a5e50 *src/PRED_predictions.h
 a961099495c077e2bf91fe59d2c5bba3 *src/Play.cpp
 4878bc95d24423f8b3ea7666e9fb28bf *src/RcppExports.cpp
