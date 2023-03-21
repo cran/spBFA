@@ -1023,7 +1023,7 @@ para SampleXi(datobj DatObj, para Para) {
   arma::vec LStarJ = Para.LStarJ;
   arma::mat U = Para.U;
   arma::colvec XBeta = Para.XBeta;
-  arma::mat XBetaMat = arma::reshape(XBetaMat, M * O, Nu);
+  arma::mat XBetaMat = arma::reshape(XBeta, M * O, Nu);
     
   //Upper bound for L
   int UpperL = L;
@@ -1162,7 +1162,7 @@ para SampleTheta(datobj DatObj, para Para) {
   arma::colvec LStarJ = Para.LStarJ;
   arma::mat Upsilon = Para.Upsilon;
   arma::colvec XBeta = Para.XBeta;
-  arma::mat XBetaMat = arma::reshape(XBetaMat, M * O, Nu);
+  arma::mat XBetaMat = arma::reshape(XBeta, M * O, Nu);
   
   //L to loop over
   int UpperL = L;

@@ -1,4 +1,4 @@
-6c016418a3a658c1f2dc75f0074587a3 *DESCRIPTION
+df83cb02455689bf37443a11c78b63dc *DESCRIPTION
 d35062b05e2783cf450c9cb8b55661e7 *NAMESPACE
 df191a1a8abdea870a5766f35ebabeff *R/DIAG_diagnostics.R
 5edddf1803d1799a7e3c3a6c9854757c *R/MCMC_CheckInputs.R
@@ -13,7 +13,7 @@ af0dd7bc1ff5e62bddf9c602244f6a05 *build/vignette.rds
 998cdd4eb25153e05e48cb7972f4a3d9 *data/reg.bfa_sp.rda
 a33d5417bbfca6c7d09e75819ffa553e *inst/doc/spBFA-example.R
 c970aae91fd7730cfc874790e30cb3c7 *inst/doc/spBFA-example.Rmd
-bbec48f486b5a8334762189992940bc8 *inst/doc/spBFA-example.html
+7f13ba5ab267cc0123816d201ded3606 *inst/doc/spBFA-example.html
 ea7cb5772e51bd8d02da100df2455edc *man/bfa_sp.Rd
 799e203fd92df9de008a9fd64b3b73f1 *man/diagnostics.Rd
 efc7afe7ab4a6399e0ad35356cb16019 *man/is.spBFA.Rd
@@ -27,7 +27,7 @@ c9504b4d39fca4f8ded84baaee0b217d *src/DIAG_Conversion.cpp
 ab838c0ff439c2297879d81a54e6c77e *src/DIAG_diagnostics.h
 40d9577472b9d1cef967025e4dbd8145 *src/DistributionFunctions.cpp
 ec48e8a9d821716577a8cec0582d6750 *src/MCMC_Conversion.cpp
-d2de9d5304e8af598943e96790ea4442 *src/MCMC_Samplers.cpp
+2d5b44c5b74e02c13190f5fae4e3f7d3 *src/MCMC_Samplers.cpp
 e2e97a847ddde2976a71342f038a457a *src/MCMC_Utilities.cpp
 25ba582727171f9745a521470c08da87 *src/MCMC_bfa_sp.cpp
 bb9782c5b978205a45f5d972e64486b1 *src/MCMC_bfa_sp.h
