@@ -1,4 +1,4 @@
-## ---- echo = FALSE------------------------------------------------------------
+## ----echo = FALSE-------------------------------------------------------------
 # ###Start with a clean space
 # rm(list = ls())
 # 
@@ -15,7 +15,7 @@ library(spBFA)
 ## -----------------------------------------------------------------------------
 head(VFSeries)
 
-## ---- fig.align="center", fig.width = 5.5, fig.height = 5.5-------------------
+## ----fig.align="center", fig.width = 5.5, fig.height = 5.5--------------------
 PlotVfTimeSeries(Y = VFSeries$DLS,
                  Location = VFSeries$Location,
                  Time = VFSeries$Time,
@@ -66,10 +66,10 @@ Tuning <- list(Psi = 1)
 ## -----------------------------------------------------------------------------
 MCMC <- list(NBurn = 1000, NSims = 1000, NThin = 2, NPilot = 5)
 
-## ---- include = FALSE---------------------------------------------------------
+## ----include = FALSE----------------------------------------------------------
 data(reg.bfa_sp)
 
-## ---- eval = FALSE------------------------------------------------------------
+## ----eval = FALSE-------------------------------------------------------------
 #  reg.bfa_sp <- bfa_sp(Y ~ 0, data = dat, dist = W, time = Time,  K = 10,
 #                       starting = Starting, hypers = Hypers, tuning = Tuning, mcmc = MCMC,
 #                       L = Inf,
@@ -94,24 +94,24 @@ library(coda)
 ## -----------------------------------------------------------------------------
 Sigma2_1 <- as.mcmc(reg.bfa_sp$sigma2[, 1])
 
-## ---- fig.width = 5.2, fig.height = 5.2, echo = FALSE-------------------------
+## ----fig.width = 5.2, fig.height = 5.2, echo = FALSE--------------------------
 par(mfrow = c(1, 1))
 traceplot(Sigma2_1, ylab = expression(paste(sigma^2 ~ "(" ~ s[1]~ ")")), main = expression(paste("Posterior" ~ sigma^2 ~ "(" ~ s[1]~ ")")))
 
-## ---- echo = FALSE------------------------------------------------------------
+## ----echo = FALSE-------------------------------------------------------------
 geweke.diag(Sigma2_1)$z
 
 ## -----------------------------------------------------------------------------
 Diags <- spBFA::diagnostics(reg.bfa_sp, diags = c("dic", "dinf", "waic"), keepDeviance = TRUE)
 
-## ---- fig.align = 'center', fig.width = 4, fig.height = 3.3-------------------
+## ----fig.align = 'center', fig.width = 4, fig.height = 3.3--------------------
 Deviance <- as.mcmc(Diags$deviance)
 traceplot(Deviance, ylab = "Deviance", main = "Posterior Deviance")
 
-## ---- eval = FALSE------------------------------------------------------------
+## ----eval = FALSE-------------------------------------------------------------
 #  print(Diags)
 
-## ---- echo = FALSE------------------------------------------------------------
+## ----echo = FALSE-------------------------------------------------------------
 unlist(Diags$dic)
 unlist(Diags$dinf)
 unlist(Diags$waic)
@@ -125,13 +125,13 @@ Predictions <- predict(reg.bfa_sp, NewTimes)
 ## -----------------------------------------------------------------------------
 names(Predictions)
 
-## ---- fig.align = 'center', fig.width = 4.5, fig.height = 4.5-----------------
+## ----fig.align = 'center', fig.width = 4.5, fig.height = 4.5------------------
 PlotSensitivity(Y = apply(Predictions$Y$Y10, 2, mean) * 10,
                 main = "Posterior mean prediction\n at 3 years",
                 legend.lab = "Posterior Mean", legend.round = 2,
                 bins = 250, border = FALSE, zlim = c(0, 40))
 
-## ---- fig.align = 'center', fig.width = 4.5, fig.height = 4.5-----------------
+## ----fig.align = 'center', fig.width = 4.5, fig.height = 4.5------------------
 PlotSensitivity(Y = apply(Predictions$Y$Y10 * 10, 2, sd),
                 main = "Posterior standard deviation\n (SD) at 3 years",
                 legend.lab = "Posterior SD", legend.round = 2,
