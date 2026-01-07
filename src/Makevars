@@ -1,3 +1,7 @@
+PKG_CPPFLAGS = -DNDEBUG
+PKG_CXXFLAGS = -g0
+PKG_LIBS = $(LAPACK_LIBS) $(BLAS_LIBS) $(FLIBS)
+
 ## CXX_STD = CXX11
     
 ## PKG_CXXFLAGS = $(SHLIB_OPENMP_CXXFLAGS) 
@@ -5,7 +9,11 @@
 
 
 ## Use the R_HOME indirection to support installations of multiple R version
-PKG_LIBS = `$(R_HOME)/bin/Rscript -e "Rcpp:::LdFlags()"` $(LAPACK_LIBS) $(BLAS_LIBS) $(FLIBS)
+## PKG_LIBS = `$(R_HOME)/bin/Rscript -e "Rcpp:::LdFlags()"` $(LAPACK_LIBS) $(BLAS_LIBS) $(FLIBS)
+
+## Added based on the feedback by Prof Ripley
+## PKG_CPPFLAGS += -DNDEBUG
+## PKG_CXXFLAGS += -g0
 
 ## PKG_CPPFLAGS=`$(R_HOME)/bin/Rscript -e "Rcpp:::CxxFlags()"`
 ## As an alternative, one can also add this code in a file 'configure'

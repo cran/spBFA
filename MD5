@@ -1,6 +1,6 @@
-13b0c9b19d68334cb5fe4d8a41b0c17d *DESCRIPTION
+bf6571ce13cd937559a3b8daada6198c *DESCRIPTION
 d35062b05e2783cf450c9cb8b55661e7 *NAMESPACE
-d9be9a1920fec392967c5cef0687de75 *NEWS.md
+226f9910537cf800ef0686a4d5ce3b24 *NEWS.md
 df191a1a8abdea870a5766f35ebabeff *R/DIAG_diagnostics.R
 5edddf1803d1799a7e3c3a6c9854757c *R/MCMC_CheckInputs.R
 2f593081b39fa5e0b706de3705d7bdff *R/MCMC_Create.R
@@ -11,10 +11,10 @@ e6bee87bf3d10a7b35b7400182f06834 *R/PRED_predict.R
 9dc22a4c3b71ea6e7e1b43706d02973a *R/reg.bfa_sp-data.R
 86f70fed87b9332f54b25af619e1cf9b *R/spBFA-package.R
 0820ae765fbc06480d003645870ad57c *build/vignette.rds
-998cdd4eb25153e05e48cb7972f4a3d9 *data/reg.bfa_sp.rda
+fc5ebe1c14df4e35ad46cfa02cbbe6eb *data/reg.bfa_sp.rda
 8dd0fa74ddc336d52a7dcb8d960a199e *inst/doc/spBFA-example.R
 c970aae91fd7730cfc874790e30cb3c7 *inst/doc/spBFA-example.Rmd
-ee0f79f5a66267db99a962ac04c63397 *inst/doc/spBFA-example.html
+ac5f407f8e376dd2426fd95cf58ae499 *inst/doc/spBFA-example.html
 ea7cb5772e51bd8d02da100df2455edc *man/bfa_sp.Rd
 799e203fd92df9de008a9fd64b3b73f1 *man/diagnostics.Rd
 efc7afe7ab4a6399e0ad35356cb16019 *man/is.spBFA.Rd
@@ -32,7 +32,7 @@ ec48e8a9d821716577a8cec0582d6750 *src/MCMC_Conversion.cpp
 e2e97a847ddde2976a71342f038a457a *src/MCMC_Utilities.cpp
 25ba582727171f9745a521470c08da87 *src/MCMC_bfa_sp.cpp
 bb9782c5b978205a45f5d972e64486b1 *src/MCMC_bfa_sp.h
-a2bcd9ccd334e4cbe19c0f48acc6ac67 *src/Makevars
+19c05911e489abc30be1dea8fc2451df *src/Makevars
 606d64fa561f1000382ce9d3113456ea *src/Makevars.win
 8d6b68d50555106dac7861866531ed68 *src/PRED_Conversion.cpp
 9f1584d77b8349fffa1927dcab29d69a *src/PRED_EtaKrigging.cpp
